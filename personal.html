@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Lillie Schachter</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200italic,400,700">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/personal.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <img onclick="location.reload()" class="me-pic" src="images/lillie_starbucks.jpg">
+            <a class="me" onclick="location.reload()">Lillie Schachter</a>
+        </div>
+
+        <div class="options">
+            <button id="b1" type = "button" onclick="display('About Me','about');hide('projects');hide('resume')">About Me</button>
+            <button id="b2" type="button" onclick="display('Resume','resume');hide('about');hide('projects')">Resume</button>
+            <button id="b3" type="button" onclick="display('Projects','projects'); hide('resume');hide('about')">Projects</button>
+        </div>
+
+        <div class="content">
+            <h2 class="info-title" id="title-info"></h2>
+            <p class="welcome" id="hello">Welcome!</p>
+
+            <div class="info" id="about">
+                <hr>
+                <p >Hi! My name is Lillie Schachter. I am a recent grad of Connecticut College looking to put my Computer Science BA to good use. My favorite coding language is Python 3, and I am particularly fond of building games with fun and interesting logic (as evidenced on my <a class="arc" onclick="display('Projects','projects');hide('about')">projects</a> page!). I have a knack for helping people learn how to code, and for getting them excited about that process. I prefer back-end, behind the scenes work, but know the value of a complete, sleek, easy to use product. </p>
+            
+                <p>Click the envelope ( <a href="mailto:lillieschachter@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a> ) below to email me, or check out more of my info on my LinkedIn and gitHub pages (also linked below), or by exploring more of this website. Thanks for visiting!</p>
+            </div>
+
+            <div id="resume" class="Resume">
+                <hr>
+                <dl>
+                    <dt>Education</dt>
+                    <dd>
+                        <h2>Connecticut College<span>BA in Computer Science, May 2015</span></h2>
+                        <p><strong>Honors and Awards:</strong> Computer Science Award for Exemplary Leadership and Service<span><i>Spring 2015</i></span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Coding Languages and Software</dt>
+                    <dd>
+                        <h2>Fluent in</h2>
+                        <p>Python 3, Java, HTML/JavaScript/PHP, C#</p>
+                        <h2>Experience with</h2>
+                        <p>CSS, MySQL, C++, Unity, Scheme, DrRacket, MailChimp </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Work Experience</dt>
+                    <dd>
+                        <h2>Lab Instructor
+                        <span> Connecticut College Computer Science Department, Fall 2015</span></h2>
+                        <ul>
+                            <li>Proposed concept for additional department staffing; selected to pilot the position</li>
+                            <li>Teach two weekly labs each in Python and Java, for the Introductory and Data Structures Courses</li>
+                            <li>Manage groups of TAs to grade the aforementioned class assignments</li>
+                        </ul>
+                        <h2>Head Teaching Assistant<span>Connecticut College Computer Science Department 2012-2015</span></h2>
+                        <ul>
+                            <li>Act as lead human resources agent: trusted by department to hire, fire and manage all TAs</li>
+                            <li>Run twice-weekly lab sessions, help sessions, and in-class assistance</li>
+                            <li>Create and manage schedule of all 20 TAs in the capacities above</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Select Academic Projects</dt>
+                    <dd>
+                        <h2>The Bottleneck Matching Problem<span>Research Topic, Connecticut College Fall 2014-Current</span></h2>
+                        <ul>
+                            <li>Application to discover benefits of different algorithms in the Online Matching Problem, built in Python</li>
+                            <li>Algorithms implemented: Greedy (by distance), OPT, Threshold-Swapping, Serve-Or-Skip</li>
+                        </ul>
+                        <h2>Diagonal Dominoes<span>Independent Project, Connecticut College Spring 2015</span></h2>
+                        <ul>
+                            <li>Implemented Algorithmic Game Theory concept roll-back equilibrium / backward induction</li>
+                            <li>Used weighted minimax move selection algorithm coded in Python</li>
+                        </ul>
+                        <h2>Doodle Gibs<span>Lead Software Architect, Connecticut College Spring 2015</span></h2>
+                        <ul>
+                            <li>Co-developed real-time strategy game</li>
+                            <li>Built using Unity (with C#), specifically for large touch-screen display</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Leadership</dt>
+                    <dd>
+                        <h2>Vice-President (2015)<span>Computer Science Student Advisory Board, Connecticut College 2013 - 2015</span></h2>
+                        <ul>
+                            <li>Plan events; liaison with professors; cultivate majors; advocate for the department</li>
+                        </ul>
+                        <h2>Co-Founder<span>Women in Computer Science, Connecticut College Spring 2014 - 2015</span></h2>
+                        <ul>
+                            <li>Contribute to ACM-W chapter on campus</li>
+                            <li>Collaborate to start and maintain Women in Tech campus organization</li>
+                            <li>Establish Women in Computer Science housing through official channels</li>
+                        </ul>
+                        <h2>Daytime Events Chair<span>Connecticut College Senior Week Committee Spring 2014</span></h2>
+                        <ul>
+                            <li>Headed committee to create, budget, and run four days of activities for 400 students</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+
+            <div id="projects" class="Projects">
+                <hr>
+
+                <img onclick="flip('1')"id="down1" class="down1" src="images/carets/down.png">
+                <img onclick="flip('1')" id="up1"class="up1" src="images/carets/up.png">
+
+                <h2 onclick="flip('1')" id="hide1" class="hide">Online Bottleneck Matching</h2>
+                <p id="project1" class="project">yeah stuff </p>
+
+                <img onclick="flip('2')" id="down2" class="down" src="images/carets/down.png">
+                <img onclick="flip('2')" id="up2" class="up" src="images/carets/up.png">
+
+                <h2 onclick="flip('2')" id="hide2" class="hide">Diagonal Dominoes</h2>
+                <div class="project" id="project2">
+
+
+                    <figure class="fig1">
+                        <img class="collection-1" alt="Hi!" src="images/dominoes/collection1.png">
+                        <figcaption class="cap1">The human player's tile collection before game-play (with buttons)</figcaption>
+                    </figure>
+                    <figure class="fig2">
+                        <img class="collection-2" alt="Hi!" src="images/dominoes/collection2.png">
+                        <figcaption class="cap2">The computer player's tile collection before game-play (sans buttons)</figcaption>
+                    </figure>
+                    <p class="diag1">Diagonal Dominoes is based on a mini-game found in the PS2 video game 'Avatar: the Last Airbender'. Each player begins with five two-toned tiles, as depicted here.</p>
+                    
+                    
+
+                    <p class="diag1">The human player (Player 1) can start the game with any tile in their collection. From there, each player must put down a tile whose color corresponds with the open tile on the board.</p>
+                    <figure >
+                        <img class="pic2" alt="Hi!" src="computer_win.png">
+                        <figcaption class="cap2">Player one has no more red tiles; Player 2 wins</figcaption>
+                    </figure>
+                    <p class="intro2">Once the human begins the game, the computer creates a tree of all possible moves. From there, if a path exists that can guarantee the computer's victory, it will take it. If not, the computer will opt for the path that has the most opportunity for human error, as this ups its chances of winning.</p>
+                    
+                    <p class="intro2">The game ends either when a player has no more tiles with the right color to play, or no more tiles at all (this case will only be available to the human player, as they always go first).</p>
+                </div>
+
+
+
+
+
+
+                <img onclick="flip('3')" id="down3" class="down" src="images/carets/down.png">
+                <img onclick="flip('3')" id="up3"class="up" src="images/carets/up.png">
+
+                <h2 onclick="flip('3')" id="hide3" class="hide">The Pond: A Game of Imitation Dynamics and Absorbing Sets</h2>
+                <p id="project3"class="project">yeah stuff </p>
+
+            </div>
+        </div>
+
+
+    	<div id="footer"class="footer">
+    		<a href="mailto:lillieschachter@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+    		<a target="_blank" href="http://www.github.com/lschachter/" alt="gitHub"><i class="fa fa-github-alt fa-2x"></i></a>
+    		<a target="_blank" href="https://www.linkedin.com/in/lillieschachter" alt="linkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
+    	</div>
+    </body>
+</html>

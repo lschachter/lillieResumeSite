@@ -1,1 +1,151 @@
 /* All style should go in this document. */
+body{
+	background-color: #eef0f1;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+.header{
+ 	min-width:100vw;
+ 	min-height:20vh;
+ 	background-color: #aac2c2;
+
+}
+.me-pic{
+	margin:10px;
+	width: 50%;
+	max-width: 300px;
+	border-radius: 10%;
+	float:left;
+	border: 5px solid #aab0b1;
+
+}
+.me{
+	font-size: 40px;
+	text-decoration: none;
+	color:#eef0f1;
+}
+.hide, .me, .me-pic{
+	cursor: pointer; cursor: hand;
+}
+.welcome{
+	font-size: 55px;
+	padding-top: 11vh;
+}
+.options{
+	min-width: 50vw;
+	max-height: 5vh;
+	display: table-cell;
+	padding-left: 3%;
+	padding-right: 0px;
+	font-size: 20px;
+}
+.content{
+	padding: 7%;
+}
+.down, .down1{
+	max-width: 15px;
+	cursor: pointer; cursor: hand;
+	float: left;
+	margin-right: 5px;
+	padding-top: 10px;
+}
+.down1{
+	padding-top: 20px;
+}
+.up, .up1{
+	display:none;
+	cursor: pointer; cursor: hand;
+	max-width: 15px;
+	float: left;
+	margin-right: 5px;
+	padding-top: 10px;
+}
+.up1{
+	padding-top: 20px;
+}
+.info, .Resume, .Projects,.project{
+	display: none;
+}
+.project{
+	padding-left: 20px;
+}
+.collection-1, .collection-2{
+	max-width: 100px;
+	border: 5px solid #999;
+}
+.collection-1{
+	margin-right: 7px;
+}
+.collection-2{
+	margin-left: 7px;
+}
+.fig1{
+	float: left;
+}
+.fig2{
+	float: right;
+}
+.cap1,.cap2{
+	float:bottom;
+	max-width: 100px;
+}
+.cap2{
+	text-align: right;
+}
+.diag1{
+	padding-top: 10px;
+}
+.footer{
+	display: table-cell;
+ 	min-width:100vw;
+ 	height:10vh;
+ 	text-align: center;
+ 	vertical-align: bottom;
+}
+
+button{	
+	width: 110px;
+}
+span, h2, dt, dl, dd,p,.info-title{
+	cursor:default;
+}
+ span {
+	
+	bottom: 0; float:right;
+	font-size: 16px;
+	color: #999;
+	font-weight: normal;
+}
+
+h2 span{
+	font-style: italic;
+}
+dt {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: right;
+	padding: 0 16px 0 0;
+	width: 150px;
+	border-right: 1px solid #999;
+}
+dl { display: table-row; }
+dl dt, dl dd {
+	display: table-cell;
+	padding-bottom: 20px;
+	padding-left: 3%;
+}
+dl dd {
+	max-width: 500px;
+}
+
+
+a:link, a:visited{
+	color: #aac2c2;
+}
+a:hover,.hide:hover,.me:hover, .cap1, .cap2{
+	color: #999;
+}
+button:hover{
+	font-weight: bold;
+}
