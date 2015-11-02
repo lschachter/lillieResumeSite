@@ -42,26 +42,18 @@ body{
 .content{
 	padding: 7%;
 }
-.down, .down1{
+.down, .down1,.up,.up1{
 	max-width: 15px;
-	cursor: pointer; cursor: hand;
-	float: left;
-	margin-right: 5px;
 	padding-top: 10px;
+	margin-right: 5px;
+	float: left;
+	cursor: pointer; cursor: hand;
 }
-.down1{
+.down1,.up1{
 	padding-top: 20px;
 }
 .up, .up1{
 	display:none;
-	cursor: pointer; cursor: hand;
-	max-width: 15px;
-	float: left;
-	margin-right: 5px;
-	padding-top: 10px;
-}
-.up1{
-	padding-top: 20px;
 }
 .info, .Resume, .Projects,.project{
 	display: none;
@@ -78,6 +70,10 @@ body{
 }
 .collection-2{
 	margin-left: 7px;
+}
+.link{
+	text-decoration: none;
+	color: #aac2c2;
 }
 .fig1{
 	float: left;
@@ -145,6 +141,8 @@ a:link, a:visited{
 }
 a:hover,.hide:hover,.me:hover, .cap1, .cap2{
 	color: #999;
+	cursor: pointer; cursor: hand;
+
 }
 button:hover{
 	font-weight: bold;

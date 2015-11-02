@@ -3,11 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <title> Lillie Schachter</title>
+        <link rel="icon" type="image/png" href="images/logo.png" />
+
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200italic,400,700">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://www.skulpt.org/static/skulpt.min.js" type="text/javascript"></script> 
+        <script src="http://www.skulpt.org/static/skulpt-stdlib.js" type="text/javascript"></script>
         <script src="js/personal.js"></script>
     </head>
     <body>
@@ -28,7 +32,7 @@
 
             <div class="info" id="about">
                 <hr>
-                <p >Hi! My name is Lillie Schachter. I am a recent grad of Connecticut College looking to put my Computer Science BA to good use. My favorite coding language is Python 3, and I am particularly fond of building games with fun and interesting logic (as evidenced on my <a class="arc" onclick="display('Projects','projects');hide('about')">projects</a> page!). I have a knack for helping people learn how to code, and for getting them excited about that process. I prefer back-end, behind the scenes work, but know the value of a complete, sleek, easy to use product. </p>
+                <p >Hi! My name is Lillie Schachter. I am a recent graduate of Connecticut College looking to put my Computer Science BA to good use. My favorite coding language is Python 3, and I am particularly fond of building games with fun and interesting logic (as evidenced on my <a class="link"onclick="display('Projects','projects');hide('about')">projects</a> page!). I have a knack for helping people learn how to code, and for getting them excited about that process. I prefer back-end, behind the scenes work, but know the value of a complete, sleek, easy to use product. </p>
             
                 <p>Click the envelope ( <a href="mailto:lillieschachter@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a> ) below to email me, or check out more of my info on my LinkedIn and gitHub pages (also linked below), or by exploring more of this website. Thanks for visiting!</p>
             </div>
@@ -117,45 +121,44 @@
                 <img onclick="flip('1')" id="up1"class="up1" src="images/carets/up.png">
 
                 <h2 onclick="flip('1')" id="hide1" class="hide">Online Bottleneck Matching</h2>
-                <p id="project1" class="project">yeah stuff </p>
+                <div id="project1" class="project">
+                    <p>The Problem:</p>
+                    <p>You are given a set S={s1,s2,...,sn} of servers in set locations, and a set R={r1,r2,...,rn} of requests that each need to reach a server. The request locations are random and occur one at a time, and both sets occur in a 2D space. Each server can only service one request, and every request must be serviced (in most cases).</p>
+                    <p>The Goal:</p>
+                    <p>With no knowledge of future request locations, minimize the cost (or distance) of the most expensive server-request match.</p>
+                    <p>Implementation:</p>
+                    <p>Created in Python 3, two versions of the project exist: one small-scale graphical depiction and one larger-scale non-graphical version. The graphical version uses Zelle's graphics.py file to create a plane of 6 randomly placed users. Both versions test several algorithms: greedy-by-distance, optimal, greedy-swapping (in which you can swap two matches as the come in, dependent on a maximum threshold), and the serve-or-skip (in which you can reject a certain number of requests dependent upon a maximum threshold). </p>
+                    <p>All results were compared to the optimal algorithm. Trends continued between input-sets of size 10 to size 750; serve-or-skip resulted in the closest bottleneck to opt, followed by greedy-swapping, and understandably, ending in greedy-by-distance with the largest bottleneck.</p>
+                </div>
 
                 <img onclick="flip('2')" id="down2" class="down" src="images/carets/down.png">
                 <img onclick="flip('2')" id="up2" class="up" src="images/carets/up.png">
 
                 <h2 onclick="flip('2')" id="hide2" class="hide">Diagonal Dominoes</h2>
                 <div class="project" id="project2">
-
-
-                    <figure class="fig1">
-                        <img class="collection-1" alt="Hi!" src="images/dominoes/collection1.png">
-                        <figcaption class="cap1">The human player's tile collection before game-play (with buttons)</figcaption>
-                    </figure>
-                    <figure class="fig2">
-                        <img class="collection-2" alt="Hi!" src="images/dominoes/collection2.png">
-                        <figcaption class="cap2">The computer player's tile collection before game-play (sans buttons)</figcaption>
-                    </figure>
-                    <p class="diag1">Diagonal Dominoes is based on a mini-game found in the PS2 video game 'Avatar: the Last Airbender'. Each player begins with five two-toned tiles, as depicted here.</p>
+                
+                    <p class="diag1">Diagonal Dominoes is based on a mini-game found in the PS2 video game 'Avatar: the Last Airbender'. Each player begins with five two-toned tiles, each tile's colors a random combination from four pre-set colors.</p>                   
+                    <p class="diag1">The human player can start the game, placing any tile in their collection horizontally on the bottom left corner of the board. From there, the players switch off placing tiles horizontally, one row and one column up and to the right of the open tile. Each tile placed must have a color that corresponds to the one on the board, resulting in each column having only one color in it.</p>
                     
-                    
-
-                    <p class="diag1">The human player (Player 1) can start the game with any tile in their collection. From there, each player must put down a tile whose color corresponds with the open tile on the board.</p>
-                    
-                    <p class="intro2">Once the game has started, the computer creates a tree of all possible moves. From there, if a path exists that can guarantee the computer's victory, it will take it. If not, the computer will opt for the path that has the most opportunity for human error, as this ups its chances of winning.</p>
+                    <p class="intro2">At the start of the game, the computer creates a tree of all possible moves. From there, if a path exists that can guarantee the computer's victory, it will take it. If not, the computer will opt for the path that has the most opportunity for human error, as this ups its chances of winning.</p>
                     
                     <p class="intro2">The game ends either when a player has no more tiles with the right color to play, or no more tiles at all (this case will only be available to the human player, as they always go first).</p>
+
+                    <p>Here is a direct link to my <a class="link"target="_blank" href="https://github.com/lschachter/DiagonalDominoes">Diagonal Dominoes</a> repository on gitHub.</p>
+
                 </div>
-
-
-
-
-
 
                 <img onclick="flip('3')" id="down3" class="down" src="images/carets/down.png">
                 <img onclick="flip('3')" id="up3"class="up" src="images/carets/up.png">
 
                 <h2 onclick="flip('3')" id="hide3" class="hide">The Pond: A Game of Imitation Dynamics and Absorbing Sets</h2>
-                <p id="project3"class="project">yeah stuff </p>
+                <div id="project3"class="project">
+                   <p>The Pond is a village of players, arranged in a circle around the pond. Each player is either an altruist, giving a set number (1) of 'good', or points, to their neighbors at a cost to themselves (0.3), or an egoist, giving nothing away with no cost to themselves.</p>
+                   <p>In the game, there are two rounds: the first is a village of six, where each player affects a neighborhood of one person on either side of themselves. The human user can switch one player per round from an egoist to an altruist, or vice versa. After this is done (or if the user chooses not to switch anyone), the round ends and each player's total, based on the number of altruists in the player's surrounding neighborhood, is tallied.</p>
+                   <p>These tallies are compared to the average total of altruists in each neighborhood and all egoists in each neighborhood. If the average of the other type of player is higher, that player will switch. If not, it will remain what it was.</p>
+                   <p>The second round is larger, with a larger neighborhood, but the goal and gameplay remain the same. The user wins if they can get all players to choose to be altruists. The user loses if all players choose to be egoists.</p>
 
+               </div>
             </div>
         </div>
 

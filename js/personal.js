@@ -29,4 +29,16 @@ $(document).ready(function(){
     $("#hide3, #up3, #down3").click(function(){
         $("#project3").toggle("slow");
     });
+    
 });
+
+/*<figure class="fig1">
+                        <img class="collection-1" alt="Hi!" src="images/dominoes/collection1.png">
+                        <figcaption class="cap1">The human player's tile collection before game-play (with buttons)</figcaption>
+                    </figure>
+                    <figure class="fig2">
+                        <img class="collection-2" alt="Hi!" src="images/dominoes/collection2.png">
+                        <figcaption class="cap2">The computer player's tile collection before game-play (sans buttons)</figcaption>
+                    </figure>
+
+*/
