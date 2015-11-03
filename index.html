@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Lillie Schachter</title>
+        <link rel="icon" type="image/png" href="images/logo.png" />
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200italic,400,700">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://www.skulpt.org/static/skulpt.min.js" type="text/javascript"></script> 
+        <script src="http://www.skulpt.org/static/skulpt-stdlib.js" type="text/javascript"></script>
+        <script src="js/personal.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <img onclick="location.reload()" class="me-pic" src="images/lillie_starbucks.jpg">
+            <a class="me" onclick="location.reload()">Lillie Schachter</a>
+        </div>
+
+        <div class="options">
+            <button id="b1" type = "button" onclick="display('About Me','about');hide('projects');hide('resume')">About Me</button>
+            <button id="b2" type="button" onclick="display('Resume','resume');hide('about');hide('projects')">Resume</button>
+            <button id="b3" type="button" onclick="display('Projects','projects'); hide('resume');hide('about')">Projects</button>
+        </div>
+
+        <div class="content">
+            <h2 class="info-title" id="title-info"></h2>
+            <p class="welcome" id="hello">Welcome!</p>
+
+            <div class="info" id="about">
+                <hr>
+                <p >Hi! My name is Lillie Schachter. I am a recent graduate of Connecticut College looking to put my Computer Science BA to good use. My favorite coding language is Python 3, and I am particularly fond of building games with fun and interesting logic (as evidenced on my <a class="link"onclick="display('Projects','projects');hide('about')">projects</a> page!). I have a knack for helping people learn how to code, and for getting them excited about that process. I prefer back-end, behind the scenes work, but know the value of a complete, sleek, easy to use product. </p>
+            
+                <p>Click the envelope ( <a href="mailto:lillieschachter@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a> ) below to email me, or check out more of my info on my LinkedIn and gitHub pages (also linked below), or by exploring more of this website. Thanks for visiting!</p>
+            </div>
+
+            <div id="resume" class="Resume">
+                <hr>
+                <dl>
+                    <dt>Education</dt>
+                    <dd>
+                        <h2>Connecticut College<span>BA in Computer Science, May 2015</span></h2>
+                        <p><strong>Honors and Awards:</strong> Computer Science Award for Exemplary Leadership and Service<span><i>Spring 2015</i></span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Coding Languages and Software</dt>
+                    <dd>
+                        <h2>Fluent in</h2>
+                        <p>Python 3, Java, HTML/JavaScript/PHP, C#</p>
+                        <h2>Experience with</h2>
+                        <p>CSS, MySQL, C++, Unity, Scheme, DrRacket, MailChimp </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Work Experience</dt>
+                    <dd>
+                        <h2>Lab Instructor
+                        <span> Connecticut College Computer Science Department, Fall 2015</span></h2>
+                        <ul>
+                            <li>Proposed concept for additional department staffing; selected to pilot the position</li>
+                            <li>Teach two weekly labs each in Python and Java, for the Introductory and Data Structures Courses</li>
+                            <li>Manage groups of TAs to grade the aforementioned class assignments</li>
+                        </ul>
+                        <h2>Head Teaching Assistant<span>Connecticut College Computer Science Department 2012-2015</span></h2>
+                        <ul>
+                            <li>Act as lead human resources agent: trusted by department to hire, fire and manage all TAs</li>
+                            <li>Run twice-weekly lab sessions, help sessions, and in-class assistance</li>
+                            <li>Create and manage schedule of all 20 TAs in the capacities above</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Select Academic Projects</dt>
+                    <dd>
+                        <h2>The Bottleneck Matching Problem<span>Research Topic, Connecticut College Fall 2014-Current</span></h2>
+                        <ul>
+                            <li>Application to discover benefits of different algorithms in the Online Matching Problem, built in Python</li>
+                            <li>Algorithms implemented: Greedy (by distance), OPT, Threshold-Swapping, Serve-Or-Skip</li>
+                        </ul>
+                        <h2>Diagonal Dominoes<span>Independent Project, Connecticut College Spring 2015</span></h2>
+                        <ul>
+                            <li>Implemented Algorithmic Game Theory concept roll-back equilibrium / backward induction</li>
+                            <li>Used weighted minimax move selection algorithm coded in Python</li>
+                        </ul>
+                        <h2>Doodle Gibs<span>Lead Software Architect, Connecticut College Spring 2015</span></h2>
+                        <ul>
+                            <li>Co-developed real-time strategy game</li>
+                            <li>Built using Unity (with C#), specifically for large touch-screen display</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Leadership</dt>
+                    <dd>
+                        <h2>Vice-President (2015)<span>Computer Science Student Advisory Board, Connecticut College 2013 - 2015</span></h2>
+                        <ul>
+                            <li>Plan events; liaison with professors; cultivate majors; advocate for the department</li>
+                        </ul>
+                        <h2>Co-Founder<span>Women in Computer Science, Connecticut College Spring 2014 - 2015</span></h2>
+                        <ul>
+                            <li>Contribute to ACM-W chapter on campus</li>
+                            <li>Collaborate to start and maintain Women in Tech campus organization</li>
+                            <li>Establish Women in Computer Science housing through official channels</li>
+                        </ul>
+                        <h2>Daytime Events Chair<span>Connecticut College Senior Week Committee Spring 2014</span></h2>
+                        <ul>
+                            <li>Headed committee to create, budget, and run four days of activities for 400 students</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+
+            <div id="projects" class="Projects">
+                <hr>
+
+                <img onclick="flip('1')"id="down1" class="down1" src="images/carets/down.png">
+                <img onclick="flip('1')" id="up1"class="up1" src="images/carets/up.png">
+
+                <h2 onclick="flip('1')" id="hide1" class="hide">Online Bottleneck Matching</h2>
+                <div id="project1" class="project">
+                    <p>The Problem:</p>
+                    <p>You are given a set S={s<sub>1</sub>,s<sub>2</sub>,...,s<sub>n</sub>} of servers in set locations, and a set R={r<sub>1</sub>,r<sub>2</sub>,...,r<sub>n</sub>} of requests that each need to reach a server. The request locations are random and occur one at a time, and both sets occur in a 2D space. Each server can only service one request, and every request must be serviced (in most cases).</p>
+                    <p>The Goal:</p>
+                    <p>With no knowledge of future request locations, minimize the cost (or distance) of the most expensive server-request match.</p>
+                    <p>Implementation:</p>
+                    <p>Created in Python 3, two versions of the project exist: one small-scale graphical depiction and one larger-scale non-graphical version. The graphical version uses Zelle's graphics.py file to create a plane of 6 randomly placed users. Both versions test several algorithms: greedy-by-distance, optimal, greedy-swapping (in which you can swap two matches as the come in, dependent on a maximum threshold), and the serve-or-skip (in which you can reject a certain number of requests dependent upon a maximum threshold). </p>
+                    <p>All results were compared to the optimal algorithm. Trends continued between input-sets of size 10 to size 750; serve-or-skip resulted in the closest bottleneck to opt, followed by greedy-swapping, and understandably, ending in greedy-by-distance with the largest bottleneck.</p>
+                </div>
+
+                <img onclick="flip('2')" id="down2" class="down" src="images/carets/down.png">
+                <img onclick="flip('2')" id="up2" class="up" src="images/carets/up.png">
+
+                <h2 onclick="flip('2')" id="hide2" class="hide">Diagonal Dominoes</h2>
+                <div class="project" id="project2">
+                
+                    <p class="diag1">Diagonal Dominoes is based on a mini-game found in the PS2 video game 'Avatar: the Last Airbender'. Each player begins with five two-toned tiles, each tile's colors a random combination from four pre-set colors.</p>                   
+                    <p class="diag1">The human player can start the game, placing any tile in their collection horizontally on the bottom left corner of the board. From there, the players switch off placing tiles horizontally, one row and one column up and to the right of the open tile. Each tile placed must have a color that corresponds to the one on the board, resulting in each column having only one color in it.</p>
+                    
+                    <p class="intro2">At the start of the game, the computer creates a tree of all possible moves. From there, if a path exists that can guarantee the computer's victory, it will take it. If not, the computer will opt for the path that has the most opportunity for human error, as this ups its chances of winning.</p>
+                    
+                    <p class="intro2">The game ends either when a player has no more tiles with the right color to play, or no more tiles at all (this case will only be available to the human player, as they always go first).</p>
+
+                    <p>Here is a direct link to my <a class="link"target="_blank" href="https://github.com/lschachter/DiagonalDominoes">Diagonal Dominoes</a> repository on gitHub.</p>
+
+                </div>
+
+                <img onclick="flip('3')" id="down3" class="down" src="images/carets/down.png">
+                <img onclick="flip('3')" id="up3"class="up" src="images/carets/up.png">
+
+                <h2 onclick="flip('3')" id="hide3" class="hide">The Pond: A Game of Imitation Dynamics and Absorbing Sets</h2>
+                <div id="project3"class="project">
+                   <p>The Pond is a village of players, arranged in a circle around the pond. Each player is either an altruist, giving a set number (1.0) of 'good', or points, to their neighbors at a cost to themselves (0.3), or an egoist, giving nothing away with no cost to themselves.</p>
+                   <p>In the game, there are two rounds: the first is a village of six, where each player affects a neighborhood of one person on either side of themselves. The human user can switch one player per round from an egoist to an altruist, or vice versa. After this is done (or if the user chooses not to switch anyone), the round ends and each player's total, based on the number of altruists in the player's surrounding neighborhood, is tallied.</p>
+                   <p>These tallies are compared to the average total of altruists in each neighborhood and all egoists in each neighborhood. If the average of the other type of player is higher, that player will switch. If not, it will remain what it was.</p>
+                   <p>The second round is larger, with a larger neighborhood, but the goal and gameplay remain the same. The user wins if they can get all players to choose to be altruists. The user loses if all players choose to be egoists.</p>
+
+               </div>
+            </div>
+        </div>
+
+
+    	<div id="footer"class="footer">
+    		<a href="mailto:lillieschachter@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+    		<a target="_blank" href="http://www.github.com/lschachter/" alt="gitHub"><i class="fa fa-github-alt fa-2x"></i></a>
+    		<a target="_blank" href="https://www.linkedin.com/in/lillieschachter" alt="linkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
+    	</div>
+    </body>
+</html>
