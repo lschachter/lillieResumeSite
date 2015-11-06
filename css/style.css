@@ -7,7 +7,7 @@ body{
 .header{
  	min-width:100vw;
  	min-height:20vh;
- 	background-color: #aac2c2;
+ 	background-color: #4E6671;
 
 }
 .me-pic{
@@ -16,7 +16,7 @@ body{
 	max-width: 300px;
 	border-radius: 10%;
 	float:left;
-	border: 5px solid #aab0b1;
+	border: 5px solid #707171;
 
 }
 .me{
@@ -73,7 +73,7 @@ body{
 }
 .link{
 	text-decoration: none;
-	color: #aac2c2;
+	color: #4E6671;
 }
 .fig1{
 	float: left;
@@ -109,7 +109,7 @@ span, h2, dt, dl, dd,p,.info-title{
 	
 	bottom: 0; float:right;
 	font-size: 16px;
-	color: #999;
+	color: #4E6671;
 	font-weight: normal;
 }
 
@@ -123,7 +123,7 @@ dt {
 	text-align: right;
 	padding: 0 16px 0 0;
 	width: 150px;
-	border-right: 1px solid #999;
+	border-right: 1px solid #4E6671;
 }
 dl { display: table-row; }
 dl dt, dl dd {
@@ -131,16 +131,12 @@ dl dt, dl dd {
 	padding-bottom: 20px;
 	padding-left: 3%;
 }
-dl dd {
-	max-width: 500px;
-}
-
 
 a:link, a:visited{
-	color: #aac2c2;
+	color: #4E6671;
 }
 a:hover,.hide:hover,.me:hover, .cap1, .cap2{
-	color: #999;
+	color: #707171;
 	cursor: pointer; cursor: hand;
 
 }
