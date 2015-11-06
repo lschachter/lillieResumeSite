@@ -33,7 +33,6 @@ body{
 }
 .options{
 	min-width: 50vw;
-	max-height: 5vh;
 	display: table-cell;
 	padding-left: 3%;
 	padding-right: 0px;
